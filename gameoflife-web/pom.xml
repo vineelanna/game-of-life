@@ -15,6 +15,25 @@
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
     </properties>
+    
+    <distributionmanagement>
+        <repository>
+            <id>releases</id>
+            <name>releases</name>
+            <url>http://192.168.56.25:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>gameoflife-web</id>
+            <name>gameoflife-web</name>
+            <url>http://192.168.56.25:8081/nexus/content/repositories/gameoflife-web/</url>
+        </snapshotrepository>
+        <snapshotrepository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>http://192.168.56.25:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotrepository>
+    </distributionmanagement>
+
 
     <build>
         <finalName>gameoflife</finalName>
